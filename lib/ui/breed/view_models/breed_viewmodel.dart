@@ -47,9 +47,6 @@ class _BreedInfoScreenState extends State<BreedInfoScreen> {
     if (responseBreedImage.statusCode == 200) {
       final jsonApiResponse = jsonDecode(responseBreedImage.body);
       breedImages = List<String>.from(jsonApiResponse['message']);
-      // jsonApiResponse['message'].forEach((subbreed) {
-      //   dogsBreedList.add(Breed(breedName: breed));
-      // });
     } else {
       // Handle error if needed
     }
@@ -68,32 +65,11 @@ class _BreedInfoScreenState extends State<BreedInfoScreen> {
       return const Center(child: CircularProgressIndicator());
     }
     int randomIndex = Random().nextInt(breedImages.length);
-    final scrollController = ScrollController();
-    return Scrollbar(
-      controller: scrollController,
-      child: SingleChildScrollView(
-        controller: scrollController,
-        padding: null,
-        child: Stack(
-          children: <Widget>[
-            BreedInfoCard(
-              breedTotalInfo: Breed(
-                breedName: widget.breed.breedName,
-                subBreeds: breedSubBreeds,
-                image: breedImages[randomIndex],
-              ),
-            ),
-            Center(
-              heightFactor: 2,
-              child: ElevatedButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                child: const Text('Go back to the Breeds List'),
-              ),
-            ),
-          ],
-        ),
+    return BreedInfoCard(
+      breedTotalInfo: Breed(
+        breedName: widget.breed.breedName,
+        subBreeds: breedSubBreeds,
+        image: breedImages[randomIndex],
       ),
     );
   }
