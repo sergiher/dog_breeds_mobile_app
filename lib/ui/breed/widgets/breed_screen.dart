@@ -27,7 +27,12 @@ class BreedInfoCard extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
-            ListTile(title: Text(breedTotalInfo.subBreeds.join(', '))),
+            ListTile(
+              title:
+                  breedTotalInfo.subBreeds.isEmpty
+                      ? Text("There are no sub breeds for this breed")
+                      : Text(breedTotalInfo.subBreeds.join(', ')),
+            ),
             ListTile(
               title: Text(
                 "Image",
