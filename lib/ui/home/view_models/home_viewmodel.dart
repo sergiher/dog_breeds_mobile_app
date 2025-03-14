@@ -27,6 +27,7 @@ class _BreedsListScreenState extends State<BreedsListScreen> {
     setState(() {
       isLoading = true;
     });
+
     final response = await http.get(
       Uri.parse('https://dog.ceo/api/breeds/list/all'),
     );
