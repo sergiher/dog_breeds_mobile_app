@@ -14,8 +14,27 @@ class BreedInfoCard extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
+            ListTile(
+              title: Text(
+                "Breed",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ),
             ListTile(title: Text(breedTotalInfo.breedName)),
-            ListTile(title: Text(breedTotalInfo.image)),
+            ListTile(
+              title: Text(
+                "Sub breeds",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ),
+            ListTile(title: Text(breedTotalInfo.subBreeds.join(', '))),
+            ListTile(
+              title: Text(
+                "Image",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ),
+            Image.network(breedTotalInfo.image),
           ],
         ),
       ),

@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:math';
 
 import 'package:dog_breeds_mobile_app/ui/breed/widgets/breed_screen.dart';
 import 'package:dog_breeds_mobile_app/data/services/api/model/breed_api_model.dart';
@@ -63,11 +64,15 @@ class _BreedInfoScreenState extends State<BreedInfoScreen> {
 
   @override
   Widget build(BuildContext context) {
+    if (isLoading) {
+      return const Center(child: CircularProgressIndicator());
+    }
+    int randomIndex = Random().nextInt(breedImages.length);
     return BreedInfoCard(
       breedTotalInfo: Breed(
         breedName: widget.breed.breedName,
         subBreeds: breedSubBreeds,
-        image: breedImages.first,
+        image: breedImages[randomIndex],
       ),
     );
   }
