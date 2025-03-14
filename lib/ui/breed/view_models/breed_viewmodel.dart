@@ -68,27 +68,33 @@ class _BreedInfoScreenState extends State<BreedInfoScreen> {
       return const Center(child: CircularProgressIndicator());
     }
     int randomIndex = Random().nextInt(breedImages.length);
-    return BreedInfoCard(
-      breedTotalInfo: Breed(
-        breedName: widget.breed.breedName,
-        subBreeds: breedSubBreeds,
-        image: breedImages[randomIndex],
+    final scrollController = ScrollController();
+    return Scrollbar(
+      controller: scrollController,
+      child: SingleChildScrollView(
+        controller: scrollController,
+        padding: null,
+        child: Stack(
+          children: <Widget>[
+            BreedInfoCard(
+              breedTotalInfo: Breed(
+                breedName: widget.breed.breedName,
+                subBreeds: breedSubBreeds,
+                image: breedImages[randomIndex],
+              ),
+            ),
+            Center(
+              heightFactor: 2,
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: const Text('Go back to the Breeds List'),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
-
-  // @override
-  // Widget build(BuildContext context) {
-  //   return Scaffold(
-  //     appBar: AppBar(title: Text("22")),
-  //     body: Center(
-  //       child: ElevatedButton(
-  //         onPressed: () {
-  //           Navigator.pop(context);
-  //         },
-  //         child: const Text('Go back to the Breeds List'),
-  //       ),
-  //     ),
-  //   );
-  // }
 }
