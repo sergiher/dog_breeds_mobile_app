@@ -18,9 +18,9 @@ With this app, you will be able to browse dogs' breeds. For each breed, you will
 
 ## Overview
 
-This project is a mobile app application challenge, related to a Full-Stack Engineer job offer from Barkibu.
+This project is a mobile app application challenge, related to a Full-Stack Engineer job offer from Barkibu. It can be run in a phone device or in a web browser.
 
-Please see the [details of this challenge here](https://public.3.basecamp.com/p/TJZ2w99rpzoxyxhwHWLfmFkD).
+The details of the challenge are [here](https://public.3.basecamp.com/p/TJZ2w99rpzoxyxhwHWLfmFkD).
 
 ## Technologies Used
 
