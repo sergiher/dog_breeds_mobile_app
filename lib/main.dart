@@ -1,8 +1,15 @@
 import 'package:dog_breeds_mobile_app/ui/home/view_models/home_viewmodel.dart';
+import 'package:dog_breeds_mobile_app/ui/home/widgets/home_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (context) => BreedsListViewModel(),
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
