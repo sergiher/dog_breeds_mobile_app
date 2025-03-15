@@ -2,8 +2,7 @@ import 'package:dog_breeds_mobile_app/ui/home/widgets/breed_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:dog_breeds_mobile_app/data/services/api/model/breed_api_model.dart'; // Adjust import path
-import 'package:dog_breeds_mobile_app/ui/breed/widgets/breed_screen.dart'; // Adjust import path
+import 'package:dog_breeds_mobile_app/data/services/api/model/breed_api_model.dart';
 
 void main() {
   group('BreedCard', () {

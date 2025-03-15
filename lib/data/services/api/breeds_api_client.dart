@@ -18,7 +18,7 @@ class BreedsListService {
 
   Future<List<dynamic>> fetchBreedSubBreeds(String breedName) async {
     final response = await http.get(
-      Uri.parse('https://dog.ceo/api/breed/${breedName}/list'),
+      Uri.parse('https://dog.ceo/api/breed/$breedName/list'),
     );
     if (response.statusCode == 200) {
       final jsonApiResponse = jsonDecode(response.body);
@@ -35,7 +35,7 @@ class BreedsListService {
 
   Future<List<dynamic>> fetchBreedImage(String breedName) async {
     final response = await http.get(
-      Uri.parse('https://dog.ceo/api/breed/${breedName}/images'),
+      Uri.parse('https://dog.ceo/api/breed/$breedName/images'),
     );
     if (response.statusCode == 200) {
       final jsonApiResponse = jsonDecode(response.body);
