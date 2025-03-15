@@ -7,8 +7,7 @@
     {
       "name": "dog_breeds_mobile_app",
       "request": "launch",
-      "type": "dart",
-      "flutterMode": "debug"
+      "type": "dart"
     },
     {
       "name": "dog_breeds_mobile_app (profile mode)",
