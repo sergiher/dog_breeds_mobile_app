@@ -1,4 +1,4 @@
-import 'package:dog_breeds_mobile_app/ui/breed/view_models/breed_viewmodel.dart';
+import 'package:dog_breeds_mobile_app/ui/breed/widgets/breed_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../../data/services/api/model/breed_api_model.dart';
