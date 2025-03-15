@@ -36,9 +36,9 @@ The details of the challenge are [here](https://public.3.basecamp.com/p/TJZ2w99r
 2. **Select a device in your IDE (for instance, in VSC)**
 3. **Run the app**:
 
-```
- flutter run
-```
+   ```
+   flutter run
+   ```
 
 ## Technologies Used
 
