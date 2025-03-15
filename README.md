@@ -10,6 +10,7 @@ With this app, you will be able to browse dogs' breeds. For each breed, you will
   - [Technologies Used](#technologies-used)
   - [Architecture](#architecture)
     - [Folder structure](#folder-structure)
+    - [Tests folder structure](#tests-folder-structure)
   - [Testing](#testing)
     - [All tests:](#all-tests)
     - [Integration tests:](#integration-tests)
@@ -29,11 +30,15 @@ Please see the [details of this challenge here](https://public.3.basecamp.com/p/
 
 I'm following an MVVM architectural pattern (Model-View-ViewModel).
 
-asdasda
+![MVVM](/docs/MVVM.png)
 
 ### Folder structure
 
-asasfas
+![folder_structure](/docs/folder_structure.png)
+
+### Tests folder structure
+
+![tests_folder_structure](/docs/tests_folder_structure.png)
 
 ## Testing
 
