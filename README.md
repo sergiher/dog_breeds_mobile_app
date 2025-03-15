@@ -33,12 +33,21 @@ The details of the challenge are [here](https://public.3.basecamp.com/p/TJZ2w99r
    cd <repository-directory>
    ```
 
-2. **Select a device in your IDE (for instance, in VSC)**
+2. **Select a device in your IDE (for instance, in VSC)**:
+
+![choose_device](/docs/choose_device.png)
+
 3. **Run the app**:
 
    ```
    flutter run
    ```
+
+   If you choose to run it in your computer (for example, in linux), you can choose between these two options:
+   [1]: Linux (linux)
+   [2]: Chrome (chrome)
+
+If you choose Chrome, the app will be visible in that browser. I've choosed that option to develop the app and, for the final tests, I've run the app in a Medium phone API 36 device simulator.
 
 ## Technologies Used
 
