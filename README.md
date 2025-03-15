@@ -7,6 +7,7 @@ With this app, you will be able to browse dogs' breeds. For each breed, you will
 - [A dog's app](#a-dogs-app)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
+  - [Install and running of the app](#install-and-running-of-the-app)
   - [Technologies Used](#technologies-used)
   - [Architecture](#architecture)
     - [Folder structure](#folder-structure)
@@ -22,6 +23,22 @@ With this app, you will be able to browse dogs' breeds. For each breed, you will
 This project is a mobile app application challenge, related to a Full-Stack Engineer job offer from Barkibu. It can be run in a phone device or in a web browser.
 
 The details of the challenge are [here](https://public.3.basecamp.com/p/TJZ2w99rpzoxyxhwHWLfmFkD).
+
+## Install and running of the app
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
+
+2. **Select a device in your IDE (for instance, in VSC)**
+3. **Run the app**:
+
+```
+ flutter run
+```
 
 ## Technologies Used
 
