@@ -15,6 +15,7 @@ With this app, you will be able to browse dogs' breeds. For each breed, you will
     - [All tests:](#all-tests)
     - [Integration tests:](#integration-tests)
     - [Unit tests:](#unit-tests)
+  - [Notes](#notes)
 
 ## Overview
 
@@ -72,3 +73,16 @@ I'm following an MVVM architectural pattern (Model-View-ViewModel).
   ```
   flutter test test/unit/services/breeds_api_client_test.dart
   ```
+
+## Notes
+
+- **Logging**: I couldn't connect to the dev tools to see the logs that the app writes.
+- **ChangeNotifier**: first, I used StatefulWidget in the view model, but then I changed to ChangeNotifier and the use of notifiers to make the code easier and more understandable.
+
+- **Docker**: I wanted to encapsulate a web server with docker, to present my version inside a docker container. But I couldn't do it because of the following error:
+
+  RUN apt-get install -y curl git wget unzip libgconf-2-4 gdb libstdc++6 libglu1-mesa fonts-droid-fallback python3
+
+- **Scroll error in the device simulation**: when scrolling in a device simulation (for instance, in a "medium phone Android device", it gives the following error, but I've read that that error won't be present in a real device:
+
+  E/libEGL ( 7932): called unimplemented OpenGL ES API
