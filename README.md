@@ -1,16 +1,69 @@
-# dog_breeds_mobile_app
+# A dog's app
 
-A new Flutter project.
+With this app, you will be able to browse dogs' breeds. For each breed, you will see their sub breeds and a random image!
 
-## Getting Started
+## Table of Contents
 
-This project is a starting point for a Flutter application.
+- [A dog's app](#a-dogs-app)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Technologies Used](#technologies-used)
+  - [Architecture](#architecture)
+    - [Folder structure](#folder-structure)
+  - [Testing](#testing)
+    - [All tests:](#all-tests)
+    - [Integration tests:](#integration-tests)
+    - [Unit tests:](#unit-tests)
 
-A few resources to get you started if this is your first Flutter project:
+## Overview
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+This project is a mobile app application challenge, related to a Full-Stack Engineer job offer from Barkibu.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Please see the [details of this challenge here](https://public.3.basecamp.com/p/TJZ2w99rpzoxyxhwHWLfmFkD).
+
+## Technologies Used
+
+- **Flutter**: It is an open-source UI software development kit created by Google. It can be used to develop cross platform applications from a single codebase.
+
+## Architecture
+
+I'm following an MVVM architectural pattern (Model-View-ViewModel).
+
+asdasda
+
+### Folder structure
+
+asasfas
+
+## Testing
+
+### All tests:
+
+- **Generate the mock file**: This has to be done for any unit test run.
+
+  ```
+  flutter pub run build_runner build
+  ```
+
+- **Run all the tests**:
+  ```
+  flutter test
+  ```
+
+### Integration tests:
+
+- **Run the integration tests**:
+  ```
+  flutter test test/integration_test/
+  ```
+
+### Unit tests:
+
+- **Run the unit tests**:
+  ```
+  flutter test test/unit/
+  ```
+- **Run one unit test**:
+  ```
+  flutter test test/unit/services/breeds_api_client_test.dart
+  ```
