@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:developer' as developer;
 import 'package:http/http.dart' as http;
 
 class BreedsListService {
@@ -10,6 +11,7 @@ class BreedsListService {
       final jsonApiResponse = jsonDecode(response.body);
       return (jsonApiResponse['message'] as Map<String, dynamic>).keys.toList();
     } else {
+      developer.log('Failed to fetch the list of breeds');
       throw Exception('Failed to load the breeds list');
     }
   }

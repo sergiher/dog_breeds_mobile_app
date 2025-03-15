@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:developer' as developer;
 import 'dart:math';
 
 import 'package:dog_breeds_mobile_app/ui/breed/widgets/breed_screen.dart';
@@ -38,7 +39,9 @@ class _BreedInfoScreenState extends State<BreedInfoScreen> {
       final jsonApiResponse = jsonDecode(responseBreedSubBreeds.body);
       breedSubBreeds = List<String>.from(jsonApiResponse['message']);
     } else {
-      // Handle error if needed
+      developer.log(
+        'Failed to load the list of sub breeds for the breed ${widget.breed.breedName}',
+      );
     }
 
     final responseBreedImage = await http.get(
@@ -48,7 +51,9 @@ class _BreedInfoScreenState extends State<BreedInfoScreen> {
       final jsonApiResponse = jsonDecode(responseBreedImage.body);
       breedImages = List<String>.from(jsonApiResponse['message']);
     } else {
-      // Handle error if needed
+      developer.log(
+        'Failed to load the image for the breed ${widget.breed.breedName}',
+      );
     }
 
     if (responseBreedSubBreeds.statusCode == 200 &&
