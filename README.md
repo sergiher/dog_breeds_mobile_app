@@ -37,12 +37,21 @@ td, th {
 }
 </style>
 
+<<<<<<< HEAD
 | ### Folder structure                                  | Tests folder structure                                            |
 | ----------------------------------------------------- | ----------------------------------------------------------------- |
 | ![folder_structure_v2](/docs/folder_structure_v2.png) | ![tests_folder_structure_v2](/docs/tests_folder_structure_v2.png) |
 
 ### Tests folder structure
 
+=======
+![folder_structure_v2](/docs/folder_structure_v2.png)
+
+### Tests folder structure
+
+![tests_folder_structure_v2](/docs/tests_folder_structure_v2.png)
+
+>>>>>>> 7a82e3049481c1445f5a5ff258113d2e664e8be3
 ## Testing
 
 ### All tests:
