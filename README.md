@@ -34,11 +34,11 @@ I'm following an MVVM architectural pattern (Model-View-ViewModel).
 
 ### Folder structure
 
-![folder_structure](/docs/folder_structure.png)
+![folder_structure_v2](/docs/folder_structure_v2.png)
 
 ### Tests folder structure
 
-![tests_folder_structure](/docs/tests_folder_structure.png)
+![tests_folder_structure_v2](/docs/tests_folder_structure_v2.png)
 
 ## Testing
 
