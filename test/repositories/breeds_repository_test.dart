@@ -2,11 +2,11 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 
-import 'package:dog_breeds_mobile_app/data/repositories/breeds_repository.dart'; // Adjust import path
-import 'package:dog_breeds_mobile_app/data/services/api/breeds_api_client.dart'; // Adjust import path
-import 'package:dog_breeds_mobile_app/data/services/api/model/breed_api_model.dart'; // Adjust import path
+import 'package:dog_breeds_mobile_app/data/repositories/breeds_repository.dart';
+import 'package:dog_breeds_mobile_app/data/services/api/breeds_api_client.dart';
+import 'package:dog_breeds_mobile_app/data/services/api/model/breed_api_model.dart';
 
-import 'breeds_repository_test.mocks.dart'; // Generated mock file
+import 'breeds_repository_test.mocks.dart';
 
 @GenerateMocks([BreedsListService])
 void main() {
