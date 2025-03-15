@@ -24,6 +24,10 @@ This project is a mobile app application challenge, related to a Full-Stack Engi
 
 The details of the challenge are [here](https://public.3.basecamp.com/p/TJZ2w99rpzoxyxhwHWLfmFkD).
 
+I've chosen this API for data ingestion:
+
+- https://dog.ceo/dog-api/
+
 ## Install and running of the app
 
 1. **Clone the repository**:
