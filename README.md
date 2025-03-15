@@ -9,7 +9,6 @@ With this app, you will be able to browse dogs' breeds. For each breed, you will
   - [Overview](#overview)
   - [Technologies Used](#technologies-used)
   - [Architecture](#architecture)
-    - [Folder structure](#folder-structure)
     - [Tests folder structure](#tests-folder-structure)
   - [Testing](#testing)
     - [All tests:](#all-tests)
@@ -32,13 +31,17 @@ I'm following an MVVM architectural pattern (Model-View-ViewModel).
 
 ![MVVM](/docs/MVVM.png)
 
-### Folder structure
+<style>
+td, th {
+   border: none!important;
+}
+</style>
 
-![folder_structure](/docs/folder_structure.png)
+| ### Folder structure                                  | Tests folder structure                                            |
+| ----------------------------------------------------- | ----------------------------------------------------------------- |
+| ![folder_structure_v2](/docs/folder_structure_v2.png) | ![tests_folder_structure_v2](/docs/tests_folder_structure_v2.png) |
 
 ### Tests folder structure
-
-![tests_folder_structure](/docs/tests_folder_structure.png)
 
 ## Testing
 
